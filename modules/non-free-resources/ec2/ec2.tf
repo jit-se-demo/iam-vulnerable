@@ -15,7 +15,7 @@ resource "aws_security_group" "allow_ssh_from_world" {
 
   ingress {
     description      = "SSH from world"
-    from_port        = 22
+    from_port        = 23
     to_port          = 22
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
